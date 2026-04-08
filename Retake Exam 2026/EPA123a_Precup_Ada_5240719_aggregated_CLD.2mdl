@@ -1,0 +1,113 @@
+{UTF-8}
+construction begin rate  = A FUNCTION OF( house price)
+	~	
+	~		|
+
+construction completion rate  = A FUNCTION OF( construction begin rate,Houses under construction\
+		)
+	~	
+	~		|
+
+demolishment rate  = A FUNCTION OF( houses on the market)
+	~	
+	~		|
+
+house price  = A FUNCTION OF( houses on the market)
+	~	
+	~		|
+
+houses on the market  = A FUNCTION OF( construction completion rate,demolishment rate\
+		)
+	~	
+	~		|
+
+Houses under construction  = A FUNCTION OF( construction begin rate,construction completion rate\
+		)
+	~	
+	~		|
+
+********************************************************
+	.Control
+********************************************************~
+		Simulation Control Parameters
+	|
+
+FINAL TIME  = 100
+	~	Month
+	~	The final time for the simulation.
+	|
+
+INITIAL TIME  = 0
+	~	Month
+	~	The initial time for the simulation.
+	|
+
+SAVEPER  = 
+        TIME STEP 
+	~	Month [0,?]
+	~	The frequency with which output is stored.
+	|
+
+TIME STEP  = 1
+	~	Month [0,?]
+	~	The time step for the simulation.
+	|
+
+\\\---/// Sketch information - do not modify anything except names
+V300  Do not put anything below this section - it will be ignored
+*View 1
+$-1--1--1,0,|12||-1--1--1|-1--1--1|-1--1--1|-1--1--1|-1--1--1|96,96,100,2
+10,1,Houses under construction,736,203,46,26,8,3,0,0,-1,1,0,0,0,0,0,0,0,0
+10,2,construction begin rate,509,224,61,26,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,3,construction completion rate,937,239,63,26,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,4,houses on the market,879,418,58,26,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,5,demolishment rate,955,537,51,26,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,6,5,4,1,0,45,0,0,192,0,-1--1--1,,1|(881,540)|
+1,7,4,5,1,0,43,0,0,192,0,-1--1--1,,1|(1006,452)|
+12,8,0,887,471,80,40,8,7,0,0,-1,1,0,0,0,0,0,0,0,0
+B1
+1,9,2,1,1,0,43,0,0,192,0,-1--1--1,,1|(626,188)|
+1,10,3,1,1,0,45,0,0,192,0,-1--1--1,,1|(854,175)|
+1,11,1,3,1,0,43,0,0,192,0,-1--1--1,,1|(826,267)|
+12,12,0,836,219,80,40,8,7,0,0,-1,1,0,0,0,0,0,0,0,0
+B2
+1,13,3,4,1,0,43,0,0,192,0,-1--1--1,,1|(962,334)|
+10,14,house price,585,420,46,26,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,15,4,14,1,0,45,0,0,192,0,-1--1--1,,1|(667,471)|
+1,16,14,2,1,0,43,0,0,192,0,-1--1--1,,1|(456,327)|
+12,17,0,567,322,80,40,8,7,0,0,-1,1,0,0,0,0,0,0,0,0
+B3
+1,18,2,3,1,0,43,0,0,193,0,-1--1--1,,1|(725,81)|
+12,19,0,1032,119,80,40,8,7,0,0,-1,1,0,0,0,0,0,0,0,0
+B = balancing loop|<<NnN>>|R = reinforcing loop
+///---\\\
+:L<%^E!@
+5:Time
+19:100,0
+24:0
+25:0
+26:0
+23:0
+15:0,0,0,0,0,0
+27:0,
+34:0,
+42:0
+72:0
+73:0
+95:0
+96:0
+97:0
+77:0
+78:0
+102:1
+93:0
+94:0
+92:0
+91:0
+90:0
+87:0
+75:
+43:
+103:8,8,8,3,8
+105:0,0,0,0,0,0,0,0,0,0
+104:Vensim Sans|12||0-0-0|0-0-0|-1--1--1|0-0-255|192-192-192|-1--1--1
